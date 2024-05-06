@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Ajuste para espaçamento entre campos */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Estilização do medidor de força da senha */
+input[type="range"] {
+    -webkit-appearance: none;  
+    appearance: none;         
+    width: 50%;              
+    height: 8px;              
+    background: #ddd;        
+    outline: none;            
+    opacity: 0.7;             
+    transition: opacity .2s;  
+    margin-top: 10px;         
+}
+
+input[type="range"]:hover {
+    opacity: 1;               
+}
+
+/* Estilização do 'polegar' do medidor de força da senha */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;              
+    height: 20px;             
+    background: #4CAF50;      
+    cursor: pointer;          
+    border-radius: 10px;      
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;              
+    height: 20px;             
+    background: #4CAF50;      
+    cursor: pointer;          
+    border-radius: 10px;      
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
